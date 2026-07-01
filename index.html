@@ -10,6 +10,9 @@
 
 <body>
 
+    <!-- 🌙 다크 모드 버튼 -->
+    <button id="dark-mode-toggle">🌙 다크 모드</button>
+
     <h1>나의 GitHub 블로그</h1>
 
     <p>안녕하세요! 제 첫 GitHub 블로그입니다.</p>
@@ -36,6 +39,16 @@
         </li>
     </ul>
 
-</body>
+    <!-- 🌙 다크 모드 스크립트 -->
+    <script>
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            toggleButton.textContent = document.body.classList.contains('dark-mode')
+                ? '☀️ 라이트 모드'
+                : '🌙 다크 모드';
+        });
+    </script>
 
+</body>
 </html>

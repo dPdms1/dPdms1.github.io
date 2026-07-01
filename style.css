@@ -14,3 +14,40 @@ nav a {
 h1 {
   color: #222;
 }
+.date {
+    font-size: 0.8em;
+    color: gray;
+    margin-bottom: 10px;
+}
+/* 🌙 다크 모드 버튼 스타일 */
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* 🌙 다크 모드 전체 스타일 */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode a {
+    color: #9ecfff;
+}
+/* 다크 모드에서 제목 색상도 흰색으로 */
+body.dark-mode h1 {
+    color: #ffffff;
+}
+.date {
+    font-size: 0.8em;   /* 글자 크기를 줄임 */
+    color: gray;        /* 글자 색상을 회색으로 */
+    margin-bottom: 10px; /* 아래쪽 여백 */
+}
+

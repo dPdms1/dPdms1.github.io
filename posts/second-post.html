@@ -9,18 +9,37 @@
 </head>
 
 <body>
+    <!-- 🌙 다크 모드 버튼 -->
+    <button id="dark-mode-toggle">🌙 다크 모드</button>
+
     <h1>링크드인</h1>
+    <p class="date">2026년 6월 4일</p>
 
     <p>저의 커리어와 활동을 기록하는 링크드인 프로필입니다. 아래 링크를 통해 확인하실 수 있습니다.</p>
 
     <p>
         <a href="http://www.linkedin.com/in/yeeun-kim-678831b/" target="_blank" rel="noopener noreferrer">
-            👉 저의 링크드인 프로필 방문하기
+          저의 링크드인 프로필 방문하기
         </a>
     </p>
 
     <br>
     <a href="../index.html">홈으로 돌아가기</a>
+
+    <!-- 이전 글로 이동 -->
+    <br>
+    <a href="first-post.html">⬅️ 이전 글</a>
+
+    <!-- 🌙 다크 모드 스크립트 -->
+    <script>
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            toggleButton.textContent = document.body.classList.contains('dark-mode')
+                ? '☀️ 라이트 모드'
+                : '🌙 다크 모드';
+        });
+    </script>
 </body>
 
 </html>
